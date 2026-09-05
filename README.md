@@ -42,6 +42,10 @@ npm run build      # prebuild migrates + seeds, then builds the static site
 npm run preview
 ```
 
+## Filtering the game catalog
+
+The home page supports filtering by one or more categories and by publisher. Filters are submitted as URL query parameters (`category` and `publisher`), so filtered views can be shared or bookmarked. Because the site is statically prerendered, the generated page applies those query parameters with a small browser-side script.
+
 ## Database
 
 The SQLite database is built from `db/games.csv` — there is no live data to migrate.
